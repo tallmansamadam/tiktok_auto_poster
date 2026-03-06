@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>TikTok Automation Dashboard</title>
+<link rel="stylesheet" href="styles.css">
+<script src="consent.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>Automation Publisher</h1>
+<nav>
+<a href="terms.html">Terms</a>
+<a href="#" onclick="document.getElementById('privacyModal').classList.remove('hidden')">Privacy</a>
+</nav>
+</header>
+
+<div class="container">
+
+<h2>Automated Social Posting System</h2>
+
+<p>
+This internal automation platform schedules and publishes content to
+TikTok using integrations with Google Drive, Make.com, Zapier, and Buffer.
+</p>
+
+<p>
+This tool is intended for internal workflow automation only and should not
+be relied upon as a guaranteed publishing mechanism.
+</p>
+
+</div>
+
+<footer>
+© 2026 Automation Publisher
+</footer>
+
+<div id="consentModal" class="modal hidden">
+<div class="modal-content">
+
+<h2>Terms Acceptance Required</h2>
+
+<p>
+Before using this platform you must accept the Terms of Service and Privacy Policy.
+</p>
+
+<div class="checkbox">
+<label>
+<input type="checkbox" id="tosCheck">
+I accept the <a href="terms.html" target="_blank">Terms of Service</a>
+</label>
+</div>
+
+<div class="checkbox">
+<label>
+<input type="checkbox" id="privacyCheck">
+I accept the <a href="#" onclick="document.getElementById('privacyModal').classList.remove('hidden')">Privacy Policy</a>
+</label>
+</div>
+
+<br>
+
+<button onclick="acceptPolicies()">Accept and Continue</button>
+
+</div>
+</div>
+
+<div id="privacyModal" class="modal hidden">
+<div class="modal-content">
+
+<h2>Privacy Policy</h2>
+
+<p>
+This platform is an internal automation tool used for scheduling and posting media
+content to TikTok using third-party services including Google Drive,
+Make.com, Zapier, and Buffer.
+</p>
+
+<h3>Data Usage</h3>
+
+<p>
+Files uploaded to the system may be stored in Google Drive and processed through
+automation services for the purpose of publishing social media content.
+</p>
+
+<h3>No Personal Data Sale</h3>
+
+<p>
+We do not sell or distribute personal user data.
+</p>
+
+<h3>Third-Party Services</h3>
+
+<p>
+Content and metadata may pass through the APIs of the third-party services used
+to automate scheduling and posting.
+</p>
+
+<h3>Internal Use</h3>
+
+<p>
+This system is designed for internal operational use and is not intended as
+a public SaaS platform.
+</p>
+
+<br>
+
+<button onclick="document.getElementById('privacyModal').classList.add('hidden')">
+Close
+</button>
+
+</div>
+</div>
+
+</body>
+</html>
