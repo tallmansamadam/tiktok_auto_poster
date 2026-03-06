@@ -19,6 +19,11 @@ header h1{
     margin:0;
 }
 
+nav{
+    display:flex;
+    gap:20px;
+}
+
 .container{
     max-width:900px;
     margin:auto;
